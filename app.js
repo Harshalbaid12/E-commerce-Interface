@@ -49,13 +49,14 @@ card.forEach(carditem=>{
     carditem.style.display='none';
     
     const div = document.querySelector('.largeview');
-    const body = document.querySelector('.items');
+    const body = document.querySelector('body');
     body.style.pointerEvents='none';
-    body.style.backgroundColor="rgba(0,0,0,0.102)" ; 
+
     
      div.style.display="block";
      div.style.backgroundColor="white";
      div.style.pointerEvents="auto";
+     
 
      const title = carditem.querySelector('.title');
      const img=carditem.querySelector('.object')
