@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:1% ;
+    padding-bottom: 1%;
+    min-height: 8vh;
+    
+    
+}
+
+.navbar .logo{
+    width: 5%;
+    padding-right: 35%;
+    margin-left: 5%;
+    
+}
+
+.navbar p{
+   padding-left: 3%;
+    
+}
+
+.nav-links img{
+     cursor: pointer;
+     max-width: 7%;
+}
+
+/* Hero */
+
+.hero{
+   
+    background-image: linear-gradient(to right,#FFCDCD,#FFFFA0	);
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    
+}
+
+.hero img{
+    width: 40vh;
+   
+    padding-top: 1em;
+       
+}
+
+.nav-links{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.triangle{
+    transform: rotate(180deg);
+    width: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.heading{
+ 
+    width: 40%;
+  
+   
+}
+
+.heading h1{
+    font-size: 4rem;
+}
+
+.btn{
+    background-color: transparent;
+    color: white;
+    padding: 1% 3% 1% 3%;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.burger{
+    display: none;
+}
+.burger{
+    /* width: 60%; */
+    padding: 0%;
+   
+   
+}
+
+/* Collections Section */
+
+#collection{
+    margin:4% 0% ;
+}
+
+.buttons{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: 1% 20%;
+    padding: 1% 3%;
+   
+    background-color:#F6F3EE ;
+}
+
+.things{
+    padding: 1% 3%;
+    border-radius: 6px;
+    background-color: white;
+}
+
+#collection a:hover{
+    background-color: #FF5349 ;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #FF5349 ;
+    color: white;
+    cursor: pointer;
+}
+/* Items  tshirt*/   
+
+.header{
+    position: relative;
+    background:linear-gradient(to right,#FFCDCD,#FFFFA0);
+    margin-top: 5%;
+}
+
+.header img{
+    width: 20%;
+}
+.header h2{
+    position: absolute;
+   top: 35%;
+   left: 38%;
+   
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.object{
+    width: 100%;
+}
+
+.card{
+    border: 1px solid black;
+    margin: 3%;
+    padding: 2% 4%;
+    border-radius: 10px;
+    width: 10%;
+}
+
+.buynow{
+    width: 100%;
+    padding: 3%;
+    margin: 2% 0%;
+    background-color: #ffe30ad4;
+    border: 1px solid saddlebrown;
+    border-radius: 3px;
+}
+
+.like{
+    width: 15%;
+    cursor: pointer;
+    
+
+}
+
+.liked{
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid red;
+    background-color: rgb(255, 102, 102);
+}
+
+/* New Page T-shirts Style */
+
+.newHeader{
+    margin-top: 0;
+}
+
+.newItems{
+    flex-wrap: wrap;
+}
+
+.newCard{
+    width: 9%;
+}
+
+.quality{
+    background:linear-gradient(to right,#FFCDCD,#FFFFA0);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-bottom: 5%;
+}
+.qualitybox{
+    width: 30%;
+    background-color: honeydew;
+    border-radius: 5px;
+    padding: 1.2%;
+}
+
+.qualitybox h3{
+    color: gray;
+}
+
+.qualitybox img{
+    width: 12%;
+}
+
+/* Hoodies */
+
+.hoodies .header img{
+    width: 25.5%;
+    opacity: 1;
+    z-index: -2;
+    margin-left: -20%;
+}
+
+.hoodies .header {
+    color:white;
+}
+
+.hoodies span{
+ 
+    font-size: 3rem;
+    color:white;
+    
+   
+}
+/* Shoes */
+
+.shoes .header img{
+    margin-left:25% ;
+}
+
+.shoes .header{
+    color: white;
+}
+.shoes span{
+    font-size: 3rem;
+    color: white;
+}
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:775px) {
+   
+     body{
+         overflow: hidden;
+     }
+
+    .nav-links{
+       
+        position: absolute;
+        right: 0;
+        height: 29vh;
+        top: 9vh;
+        background-color:#FFCDCD;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 2;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.8s ease-in-out;
+
+       
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        width: 5%;
+        cursor: pointer;
+    }
+
+    .rotateburger{
+        transform: rotate(90deg);
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer .img{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.img img{
+    width: 2%;
+    padding: 2%;
+}
+
+footer p{
+    font-size: 0.5rem;
+    padding: 1%;
+}
+
+form{
+   
+    width: 100%;
+    display: none;
+    
+    
+}
+
+.formview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+/* Utility Class */
+
+.center{
+    text-align: center;
+}
+
+.seeall{
+    background-color: transparent;
+    padding: 1% 5%;
+    background-color: transparent;
+    border: 1px solid black;
+    color: skyblue;
+   
+    cursor: pointer;
+}
+
+
+.cardshadow{
+
+    box-shadow: 5px 5px 10px 10px gray;
+    cursor: pointer;
+    transition: width 2s ;
+}* 
+.toggleimg{
+    width: 25vh;
+    display: inline;
+}
+
+.togglebutton{
+   
+    padding: 1%;
+    height: 10%;
+    display: block;
+    width: 80%;
+    margin: auto; 
+    margin-top: 1%;
+}
+
+.togglelike{
+    width: 3%;
+    float:right;
+}
+
+.largeview{
+ 
+    width: 60vw;
+    height: 60vh;
+    border: 5px solid black;
+    display: none;
+    margin-left: 20%;
+    margin-right: 20%; 
+    margin-top: 5%;
+    padding: 2%;
+    position: fixed;
+    top: 10%;
+    left: -3.5%;
+    z-index: 3;
+    
+}
+
+.largeview .cancel{
+    width: 4%;
+    float: right;
+    cursor: pointer;
+}
+
+
+
+.description{
+   display: none;
+   
+} 
+
+.descriptionview{
+    text-align: left;
+    width: 50%;
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.description button{
+    padding: 1%;
+    margin: 1% 2% 1% 2%;
+    cursor: pointer;
+    border: none;
+}
+
+.description h4{
+    margin: 2% 0 0 0;
+}
